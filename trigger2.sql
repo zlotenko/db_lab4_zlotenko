@@ -1,3 +1,5 @@
+-- Тригер, який при видаленні країни з таблиці countries в таблицю countries_audit записуватиме user, date, time, назву видаленої країни
+
 DROP TABLE IF EXISTS countries_audit;
 DROP TRIGGER IF EXISTS countries_update_details ON countries;
 DROP FUNCTION IF EXISTS table_countries_audit() CASCADE;
